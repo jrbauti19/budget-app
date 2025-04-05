@@ -9,6 +9,23 @@ export interface BudgetDataState {
   setIsLoading: (isLoading: boolean) => void;
 }
 
+/**
+ * Budget data store for managing application state related to budget synchronization and loading status.
+ *
+ * This store persists data using MMKV storage to maintain state across app sessions.
+ * It tracks the timestamp of the last successful data synchronization and maintains
+ * the current loading state to coordinate UI feedback during data operations.
+ *
+ * @example
+ * import { useAppDataStore } from './stores/budgetDataStore';
+ *
+ * // Access store state
+ * const { isLoading, lastSyncTime } = useAppDataStore();
+ *
+ * // Update store state
+ * useAppDataStore.getState().setIsLoading(true);
+ * useAppDataStore.getState().setLastSyncTime(Date.now());
+ */
 export const useAppDataStore = create<BudgetDataState>()(
   persist(
     (set) => ({
