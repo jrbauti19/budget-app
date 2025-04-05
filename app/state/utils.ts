@@ -1,10 +1,10 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { mmkvJSONStorage } from './storage';
+import { useTemporaryStore } from './stores/non-persist/nonPersistedStore';
 import { useAppDataStore } from './stores/persist/budgetDataStore';
 import { useAppSettingsStore } from './stores/persist/settingsStore';
 import { useUserStore } from './stores/persist/userStore';
-import { useTemporaryStore } from './stores/non-persist/nonPersistedStore'
 
 import * as SecureStore from 'expo-secure-store'; // If using Expo
 import DeviceInfo from 'react-native-device-info';
@@ -26,6 +26,7 @@ export const createPersistedStore = <T extends object>(
 // Reset all stores to initial state
 export const clearAllStores = () => {
   // Reset in-memory state for each store
+  // TODO: create INIT_STATE objects for each store.
   useUserStore.setState({ user: null, isLoggedIn: false });
   useAppSettingsStore.setState({
     theme: 'system',
