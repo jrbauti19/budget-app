@@ -1,10 +1,10 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { mmkvJSONStorage } from './storage';
-import { useAppDataStore } from './stores/budgetDataStore';
-import { useAppSettingsStore } from './stores/settingsStore';
-import { useTemporaryStore } from './stores/tempStore';
-import { useUserStore } from './stores/userStore';
+import { useAppDataStore } from './stores/persist/budgetDataStore';
+import { useAppSettingsStore } from './stores/persist/settingsStore';
+import { useUserStore } from './stores/persist/userStore';
+import { useTemporaryStore } from './stores/non-persist/nonPersistedStore'
 
 import * as SecureStore from 'expo-secure-store'; // If using Expo
 import DeviceInfo from 'react-native-device-info';

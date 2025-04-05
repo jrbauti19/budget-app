@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { mmkvJSONStorage } from '../storage';
+import { mmkvJSONStorage } from '../../storage';
 
 export interface BudgetDataState {
   lastSyncTime: number | null;
