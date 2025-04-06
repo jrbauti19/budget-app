@@ -16,6 +16,7 @@
 		96905EF65AED1B983A6B3ABC /* libPods-budgetapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-budgetapp.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		ADCAE6C6687147ABA4695258 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 940E62A0A8F24D0084C570DE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-budgetapp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		FD81816B483446C9BDD2A2CB /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "budgetapp/noop-file.swift"; sourceTree = "<group>"; };
+		940E62A0A8F24D0084C570DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; name = "GoogleService-Info.plist"; path = "budgetapp/GoogleService-Info.plist"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.plist.xml; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				FD81816B483446C9BDD2A2CB /* noop-file.swift */,
 				48A71F1838E9438E9E928A3A /* budgetapp-Bridging-Header.h */,
 				7763179DB9674900B6B7D522 /* PrivacyInfo.xcprivacy */,
+				940E62A0A8F24D0084C570DE /* GoogleService-Info.plist */,
 			);
 			name = budgetapp;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
 				6413A757883DDE4C10AECFFA /* PrivacyInfo.xcprivacy in Resources */,
+				ADCAE6C6687147ABA4695258 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,8 +362,8 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.anonymous.budget-app";
-				PRODUCT_NAME = budgetapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zenith.firebase";
+				PRODUCT_NAME = "ZenithBudget";
 				SWIFT_OBJC_BRIDGING_HEADER = "budgetapp/budgetapp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -386,8 +390,8 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.anonymous.budget-app";
-				PRODUCT_NAME = budgetapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zenith.firebase";
+				PRODUCT_NAME = "ZenithBudget";
 				SWIFT_OBJC_BRIDGING_HEADER = "budgetapp/budgetapp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

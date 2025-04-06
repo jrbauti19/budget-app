@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "budget-app",
-    "slug": "budget-app",
+    "name": "ZenithBudget",
+    "slug": "ZenithBudget",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -9,15 +9,17 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.budget-app.firebase",
-      "buildNumber": "1.0.0"
+      "bundleIdentifier": "com.zenith.firebase",
+      "buildNumber": "1.0.0",
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.budgetapp.firebase"
+      "package": "com.zenith.firebase",
+      "googleServicesFile": "./google-services.json"
     },
     "plugins": [
       "expo-router",
