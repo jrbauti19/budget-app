@@ -1,12 +1,11 @@
 import { MMKV, Mode } from 'react-native-mmkv';
 import { createJSONStorage } from 'zustand/middleware';
-import { getOrCreateEncryptionKey } from './utils';
 
 // Initialize MMKV storage instance
 export const storage = new MMKV({
   id: 'app-storage',
   // TODO: figure out how to use encryptionKey here **
-  encryptionKey: getOrCreateEncryptionKey(), // Consider using a secure key management approach
+  encryptionKey: 'getOrCreateEncryptionKey()', // Consider using a secure key management approach
   mode: Mode.SINGLE_PROCESS,
 });
 
