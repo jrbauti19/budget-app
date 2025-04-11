@@ -4,10 +4,10 @@
     "slug": "ZenithBudget",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/ZenithBudgetApp_light_1024x1024.png",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash-icon.png",
+      "image": "./assets/images/ZenithBudgetApp_light_1024x1024.png",
       "imageWidth": 200,
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
@@ -17,7 +17,11 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.zenith.firebase",
       "buildNumber": "1.0.0",
-      "googleServicesFile": "./GoogleService-Info.plist"
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "icon": {
+        "dark": "",
+        "light": "./assets/images/ZenithBudgetApp_light_1024x1024.png"
+      }
     },
     "android": {
       "adaptiveIcon": {

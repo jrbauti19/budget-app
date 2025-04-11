@@ -33,7 +33,7 @@ export default function Index() {
     setLoading(true);
     try {
       await auth().signInWithEmailAndPassword(email, password);
-      alert('User account signed in!');
+      alert('User account signed in! Check your email.');
     } catch (error) {
       const err = error as FirebaseError;
       alert('Login failed: ' + err.message);
