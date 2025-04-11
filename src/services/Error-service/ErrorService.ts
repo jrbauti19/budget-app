@@ -10,7 +10,7 @@ import {
   ErrorSeverity,
   ErrorType,
   LoggedError,
-} from '../Error-service/@types';
+} from './@types';
 
 /**
  * ErrorService - Singleton class for handling errors across the application
